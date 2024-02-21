@@ -1,0 +1,38 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5% 0 5% 0;
+  overflow-x: hidden;
+}
+
+.scrollElement {
+  position: relative;
+}
+
+.display {
+  animation: first 5s linear infinite normal;
+}
+
+.display2 {
+  animation: second 5s linear infinite normal;
+}
+
+@keyframes first {
+  from {
+    left: 25%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes second {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -25%;
+  }
+}
